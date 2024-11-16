@@ -1,0 +1,123 @@
+:root {
+    --primary: #2d6a4f;
+    --secondary: #40916c;
+    --accent: #95d5b2;
+    --light: #d8f3dc;
+    --white: #ffffff;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--light);
+  }
+  
+  header {
+    background-color: var(--primary);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: var(--secondary);
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .statistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .stat-card {
+    background: var(--secondary);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  .timeline-stage {
+    border-left: 4px solid var(--secondary);
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .emergency-contacts {
+    background-color: #dc3545;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .treatment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .treatment-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .treatment-list li:before {
+    content: "•";
+    color: var(--secondary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .container {
+      padding: 1rem;
+    }
+  }
