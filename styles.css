@@ -1,70 +1,76 @@
 :root {
-    --primary: #2d6a4f;
-    --secondary: #40916c;
-    --accent: #95d5b2;
-    --light: #d8f3dc;
+    --primary: #1e402d;
+    --secondary: #335c45;
+    --text: #2c3e50;
+    --background: #f8f9fa;
+    --accent: #4a8b6c;
+    --light: #e9ecef;
     --white: #ffffff;
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: var(--light);
+    line-height: 1.7;
+    color: var(--text);
+    background-color: var(--background);
   }
   
   header {
-    background-color: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
   }
   
-  nav {
-    background-color: var(--secondary);
-    padding: 1rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
+  header h1 {
+    font-size: 2.5rem;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    font-weight: 700;
   }
   
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  header p {
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 1rem auto;
   }
   
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
   
-  .card {
-    background: var(--white);
-    border-radius: 8px;
-    padding: 1.5rem;
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    color: var(--primary);
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent);
   }
   
-  .statistics {
+  .content-box {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .stat-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
     margin: 2rem 0;
   }
   
   .stat-card {
-    background: var(--secondary);
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
     color: white;
     padding: 1.5rem;
     border-radius: 8px;
@@ -72,52 +78,75 @@
   }
   
   .stat-number {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 700;
     margin: 0.5rem 0;
   }
   
-  .timeline-stage {
-    border-left: 4px solid var(--secondary);
-    padding-left: 1rem;
-    margin: 1rem 0;
-  }
-  
-  .emergency-contacts {
-    background-color: #dc3545;
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-top: 1rem;
-  }
-  
-  .treatment-list {
-    list-style: none;
+  .info-list {
     padding: 0;
+    margin: 0;
   }
   
-  .treatment-list li {
-    padding: 0.5rem 0;
+  .info-list li {
+    margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
+    list-style-type: none;
   }
   
-  .treatment-list li:before {
+  .info-list li::before {
     content: "•";
-    color: var(--secondary);
+    color: var(--accent);
     font-weight: bold;
     position: absolute;
     left: 0;
   }
   
+  .symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .symptom-box {
+    background: var(--light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+  }
+  
+  .contact-info {
+    background: var(--primary);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .contact-info h3 {
+    margin-top: 0;
+    color: var(--light);
+  }
+  
+  .warning-box {
+    background: #dc3545;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
   @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
+    header {
+      padding: 2rem 1rem;
     }
     
     .container {
       padding: 1rem;
+    }
+    
+    .content-box {
+      padding: 1.5rem;
     }
   }
