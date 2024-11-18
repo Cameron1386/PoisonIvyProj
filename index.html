@@ -3,147 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding Poison Ivy</title>
+    <title>Poison Ivy Awareness - Stay Safe, Stay Informed</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Understanding Poison Ivy</h1>
-        <p>A comprehensive guide to identification, symptoms, and treatment</p>
-    </header>
-
-    <div class="container">
-        <!-- Description Section -->
-        <section id="description">
-            <h2 class="section-title">What is Poison Ivy?</h2>
-            <div class="content-box">
-                <p>Poison ivy (Toxicodendron radicans) is a plant native to North America that poses significant health risks to humans. It grows as both a vine and shrub, commonly found in forests, fields, and urban areas throughout the continent.</p>
-                
-                <h3>Key Characteristics:</h3>
-                <ul class="info-list">
-                    <li>Produces urushiol, a potent allergenic oil that triggers severe skin reactions</li>
-                    <li>Identifiable by clusters of three pointed leaves ("Leaves of three, let it be")</li>
-                    <li>Changes appearance seasonally: green in spring/summer, red/orange in fall</li>
-                    <li>Can grow as ground cover, climbing vine, or free-standing shrub</li>
-                    <li>Urushiol remains active on surfaces for several years if not cleaned</li>
-                </ul>
-
-                <h3>Exposure Methods:</h3>
-                <ul class="info-list">
-                    <li>Direct contact with plant parts (leaves, stems, roots)</li>
-                    <li>Indirect contact through contaminated objects (tools, clothing, pets)</li>
-                    <li>Inhalation of smoke from burning plants</li>
-                    <li>Contact with oil residue on outdoor equipment</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Statistics Section -->
-        <section id="statistics">
-            <h2 class="section-title">Statistics</h2>
-            <div class="stat-grid">
-                <div class="stat-card">
-                    <h3>Allergic Reaction Rate</h3>
-                    <div class="stat-number">85%</div>
-                    <p>of people develop allergic reactions</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Annual Cases</h3>
-                    <div class="stat-number">Millions</div>
-                    <p>of cases reported in the U.S.</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Potency</h3>
-                    <div class="stat-number">&lt;1mg</div>
-                    <p>of urushiol can cause reaction</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Signs, Symptoms, and Treatment -->
-        <section id="symptoms-treatment">
-            <h2 class="section-title">Signs, Symptoms, and Treatment</h2>
-            
-            <h3>Common Symptoms</h3>
-            <div class="symptoms-grid">
-                <div class="symptom-box">
-                    <h4>Initial Symptoms (12-48 hours)</h4>
-                    <ul class="info-list">
-                        <li>Redness and mild swelling</li>
-                        <li>Intense itching</li>
-                        <li>Rash formation in lines or streaks</li>
-                    </ul>
-                </div>
-                <div class="symptom-box">
-                    <h4>Progressive Symptoms (2-7 days)</h4>
-                    <ul class="info-list">
-                        <li>Fluid-filled blisters</li>
-                        <li>Spreading rash</li>
-                        <li>Increased swelling and discomfort</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="content-box">
-                <h3>Treatment Options</h3>
-                <h4>Immediate Care (Within 15 minutes of exposure):</h4>
-                <ul class="info-list">
-                    <li>Wash exposed areas with lukewarm water and soap</li>
-                    <li>Clean all clothing and equipment that may have contacted the plant</li>
-                    <li>Scrub under nails where oil may persist</li>
-                </ul>
-
-                <h4>Home Treatment:</h4>
-                <ul class="info-list">
-                    <li>Apply calamine lotion or hydrocortisone cream (1%)</li>
-                    <li>Take oral antihistamines (Benadryl) for itching</li>
-                    <li>Use cool compresses or oatmeal baths</li>
-                    <li>Keep affected areas clean and dry</li>
-                </ul>
-
-                <h4>Professional Medical Care:</h4>
-                <ul class="info-list">
-                    <li>Primary Care: For moderate cases requiring prescription treatment</li>
-                    <li>Urgent Care: For severe reactions or widespread rash</li>
-                    <li>Emergency Room: For reactions involving face, genitals, or breathing difficulties</li>
-                </ul>
-            </div>
-
-            <div class="warning-box">
-                <h3>Seek Immediate Medical Care If:</h3>
-                <ul class="info-list">
-                    <li>Difficulty breathing or swallowing</li>
-                    <li>Rash affects eyes, mouth, or genitals</li>
-                    <li>Fever develops</li>
-                    <li>Rash covers more than 25% of body</li>
-                    <li>Signs of infection (pus, increased pain, warm to touch)</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Where to Get Help -->
-        <section id="help">
-            <h2 class="section-title">Where to Get Help</h2>
-            <div class="contact-info">
-                <h3>Emergency Resources</h3>
-                <ul class="info-list">
-                    <li>
-                        <strong>Poison Control Center</strong><br>
-                        24/7 Emergency Hotline: 1-800-222-1222<br>
-                        Website: poison.org
-                    </li>
-                    <li>
-                        <strong>American Academy of Dermatology (AAD)</strong><br>
-                        Phone: (888) 462-DERM (3376)<br>
-                        Website: aad.org/public/diseases/rashes/poison-ivy
-                    </li>
-                    <li>
-                        <strong>Centers for Disease Control and Prevention (CDC)</strong><br>
-                        Website: cdc.gov/niosh/topics/plants
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Poison Ivy Awareness</h1>
+            <p>Learn to identify, prevent, and treat poison ivy exposure. Your safety matters.</p>
+        </div>
     </div>
+
+    <section class="section" id="about">
+        <h2>Description</h2>
+        <p>Poison ivy, poison oak, and poison sumac are plants that cause similar allergic reactions in most people due to an oil called urushiol, which is found in their leaves, stems, and roots. Contact with this oil leads to an itchy, red rash often accompanied by swelling and fluid-filled blisters that can become painful. The rash typically develops within a day or two of exposure and can last for weeks if untreated. While poison ivy is recognized by its clusters of three shiny green leaves, poison oak has a similar appearance with leaves resembling those of an oak tree, and poison sumac grows as a shrub or tree with rows of paired leaflets. Though the plants look different, all three can spread the urushiol oil through direct contact or indirectly via contaminated clothing, tools, or pet fur, making awareness and prevention essential.</p>
+    </section>
+
+    <section class="section" id="statistics">
+        <h2>Key Statistics</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">85%</div>
+                <p>of people are allergic to poison ivy</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25M+</div>
+                <p>Americans affected annually</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10%</div>
+                <p>of work-related injuries in forestry</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="timeline">
+        <h2>Understanding Poison Ivy Timeline</h2>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="car"></div>
+            </div>
+            <div class="timeline-dots">
+                <div class="timeline-dot active" data-index="0"></div>
+                <div class="timeline-dot" data-index="1"></div>
+                <div class="timeline-dot" data-index="2"></div>
+                <div class="timeline-dot" data-index="3"></div>
+                <div class="timeline-dot" data-index="4"></div>
+            </div>
+            <div class="timeline-labels">
+                <div class="timeline-label">Initial Contact</div>
+                <div class="timeline-label">Early Reaction</div>
+                <div class="timeline-label">Peak Reaction</div>
+                <div class="timeline-label">Severe Reaction</div>
+                <div class="timeline-label">Worst Case</div>
+            </div>
+            <div class="content-container">
+                <div class="timeline-content active" data-index="0">
+                    <h3>Stage 1: Initial Contact (0-30 Minutes)</h3>
+                    <div class="stage-description">
+                        During the initial contact phase, the urushiol oil from the poison ivy plant makes contact with the skin, though no visible symptoms are present yet. This crucial window represents the best opportunity for preventing a severe reaction. The oil can remain active on surfaces for years, making proper cleaning essential not just for skin but for all contacted items.
+                    </div>
+                    <div class="symptom-section">
+                        <div class="section-title">Signs & Symptoms</div>
+                        <div class="section-content">
+                            At this early stage, the skin may appear completely normal or show slight redness at the points of contact. No rash is visible yet, though the urushiol oil has already begun bonding with skin cells. This deceptively calm period often leads people to delay treatment, unknowingly allowing the allergen to penetrate deeper into the skin.
+                        </div>
+                    </div>
+                    <div class="treatment-section">
+                        <div class="section-title">Immediate Actions</div>
+                        <div class="section-content">
+                            Time is crucial in this phase. Thoroughly cleanse the affected areas with lukewarm water and soap within the first 30 minutes of exposure. Pay special attention to under the fingernails, where oils can hide and spread to other areas. Remove and isolate all contaminated clothing, and clean any tools or equipment that may have contacted the plant using rubbing alcohol or specialized cleaners.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-content" data-index="1">
+                    <h3>Stage 2: Early Reaction (12-48 Hours)</h3>
+                    <div class="stage-description">
+                        The early reaction phase marks the beginning of visible symptoms as your body's immune system responds to the urushiol oil. This stage is critical for implementing proper treatment protocols to minimize the severity of the developing reaction.
+                    </div>
+                    <div class="symptom-section">
+                        <div class="section-title">Signs & Symptoms</div>
+                        <div class="section-content">
+                            The first visible signs typically appear as redness developing in distinctive streaks or patches, following the pattern of plant contact. Itching begins mild but progressively intensifies, and the skin may feel warm to the touch. The rash often appears in lines or streaks where the plant brushed against the skin, though it can also present in patches where oils were spread through touching.
+                        </div>
+                    </div>
+                    <div class="treatment-section">
+                        <div class="section-title">Treatment Protocol</div>
+                        <div class="section-content">
+                            Treatment focuses on symptom management and preventing rash progression. Apply calamine lotion or hydrocortisone cream to affected areas, using cool compresses to reduce inflammation. Oatmeal baths can provide significant relief from itching, while oral antihistamines help manage the allergic response. Keep the affected areas clean and avoid scratching to prevent potential infection.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-content" data-index="2">
+                    <h3>Stage 3: Peak Reaction (2-7 Days)</h3>
+                    <div class="stage-description">
+                        The peak reaction phase represents the height of the body's immune response to the urushiol exposure. This period typically sees the most intense symptoms and requires consistent management to prevent complications.
+                    </div>
+                    <div class="symptom-section">
+                        <div class="section-title">Signs & Symptoms</div>
+                        <div class="section-content">
+                            During this phase, the rash becomes dramatically more pronounced, with significant swelling and the formation of fluid-filled blisters. The itching intensifies to its peak, often accompanied by a burning sensation. The rash may appear to spread, though this is typically due to varying reaction times in different areas or continued exposure from contaminated surfaces rather than the rash itself being contagious.
+                        </div>
+                    </div>
+                    <div class="treatment-section">
+                        <div class="section-title">Treatment Protocol</div>
+                        <div class="section-content">
+                            Management becomes more aggressive during this phase. Continue with over-the-counter treatments while monitoring for signs of infection. Many patients benefit from prescription oral steroids at this stage, particularly if the rash covers large areas or affects sensitive regions. Keeping blisters clean and intact is crucial to prevent infection. Cool showers and moisture-wicking clothing can help manage discomfort.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-content" data-index="3">
+                    <h3>Stage 4: Severe Reaction (1-3 Weeks)</h3>
+                    <div class="stage-description">
+                        A severe reaction represents a significant escalation of symptoms that requires immediate medical attention. This stage is characterized by extensive involvement of sensitive areas or the development of complications that can affect daily activities and sleep.
+                    </div>
+                    <div class="symptom-section">
+                        <div class="section-title">Signs & Symptoms</div>
+                        <div class="section-content">
+                            The rash becomes extremely pronounced, particularly when affecting sensitive areas such as the face or genitals. Large, painful blisters may develop, accompanied by significant swelling. Systemic symptoms like fever may emerge, and sleep becomes difficult due to constant discomfort. The risk of secondary bacterial infection increases, particularly if blisters break open or excessive scratching occurs.
+                        </div>
+                    </div>
+                    <div class="treatment-section">
+                        <div class="section-title">Required Actions</div>
+                        <div class="section-content">
+                            Medical intervention becomes necessary at this stage. Treatment typically involves a combination of prescription medications, including stronger corticosteroids and possibly antibiotics if infection is present. Careful monitoring of temperature and breathing is essential, particularly if facial swelling is involved. Documentation of symptom progression helps medical providers adjust treatment protocols as needed.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-content" data-index="4">
+                    <h3>Stage 5: Worst-Case Scenario</h3>
+                    <div class="stage-description">
+                        The most severe manifestation of poison ivy reaction requires immediate emergency intervention. This stage represents a potentially life-threatening situation, particularly if respiratory involvement occurs.
+                    </div>
+                    <div class="symptom-section">
+                        <div class="section-title">Critical Symptoms</div>
+                        <div class="section-content">
+                            Symptoms become severe and potentially life-threatening, with extensive rash coverage and extreme swelling affecting large portions of the body. Breathing difficulties may develop, particularly if urushiol was inhaled from burning plants. Systemic reactions can include high fever, severe pain, and potential shock. Widespread infected blisters may develop, increasing the risk of sepsis.
+                        </div>
+                    </div>
+                    <div class="treatment-section">
+                        <div class="section-title">Emergency Protocol</div>
+                        <div class="section-content">
+                            Immediate hospitalization is required for intensive monitoring and treatment. Interventions typically include intravenous corticosteroids, antihistamines, and antibiotics as needed. Respiratory support may be necessary if breathing is compromised. Following stabilization, patients require careful monitoring and typically need follow-up care with specialists to prevent future severe reactions.
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="section" id="prevention">
+        <h2>Prevention Tips</h2>
+        <div class="prevention-grid">
+            <div class="prevention-card">
+                <h3>Identification</h3>
+                <ul>
+                    <li>Look for clusters of three pointed leaves</li>
+                    <li>Watch for shiny leaves with smooth or jagged edges</li>
+                    <li>Notice red/yellow fall coloring and white berries</li>
+                </ul>
+            </div>
+            <div class="prevention-card">
+                <h3>Protection</h3>
+                <ul>
+                    <li>Wear long sleeves and pants in risk areas</li>
+                    <li>Use barrier creams like ivy block</li>
+                    <li>Clean tools and clothing after potential exposure</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="help">
+        <h2>Where to Get Help</h2>
+        <div class="help-grid">
+            <div class="help-card">
+                <h3>CDC</h3>
+                <p>Website: cdc.gov/niosh/topics/plants</p>
+                <p>Comprehensive prevention and treatment guidance</p>
+            </div>
+            <div class="help-card">
+                <h3>American Academy of Dermatology</h3>
+                <p>Phone: (888) 462-DERM (3376)</p>
+                <p>Expert skin care advice and dermatologist referrals</p>
+            </div>
+            <div class="help-card">
+                <h3>Poison Control Center</h3>
+                <p>24/7 Hotline: 1-800-222-1222</p>
+                <p>Immediate emergency guidance and support</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
